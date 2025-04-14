@@ -1,39 +1,25 @@
-# starpets-vue-test
+# Инструкция по развертыванию проекта
 
-This template should help get you started developing with Vue 3 in Vite.
+## 1. Клонирование репозитория
 
-## Recommended IDE Setup
+**Для клонирования репозитория проекта, перейти в интересующую директорию и ввести в консоль следующую команду:**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### `git clone https://github.com/shelepov-anton/starpets-vue-test.git`
 
-## Type Support for `.vue` Imports in TS
+После чего, в выбранной вами директории, сформируется папка с проектом (*starpets-vue-test*)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 2. Инициализация зависимостей
 
-## Customize configuration
+**Перейти в сформированную папку проекта и ввести в консоль следующую команду:**
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### `npm install`
 
-## Project Setup
+После чего, начнется загрузка необходимых зависимостей
 
-```sh
-npm install
-```
+## 3. Запуск проекта
 
-### Compile and Hot-Reload for Development
+**После окончания инициализации всех зависимостей, ввести в консоль следующую команду:**
 
-```sh
-npm run dev
-```
+### `npm start`
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+После успешного запуска, приложение будет доступно по адресу localhost:5173
