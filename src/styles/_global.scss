@@ -1,0 +1,33 @@
+@use "variables" as *;
+@use "functions" as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $bg-secondary-color;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    color: $text-primary-color;
+}
+
+// Global styles
+.title {
+    display: inline-block;
+    font-size: $font-size-xl;
+    margin-bottom: toRem(24);
+    margin-top: toRem(12);
+}

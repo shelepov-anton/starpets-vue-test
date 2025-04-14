@@ -1,0 +1,30 @@
+<template>
+    <div class="app-loader">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="60" height="60">
+            <radialGradient id="a8" cx=".66" fx=".66" cy=".3125" fy=".3125"
+                            gradientTransform="scale(1.5)">
+                <stop offset="0" stop-color="#fe9920" />
+                <stop offset=".3" stop-color="#fe9920" stop-opacity=".9" />
+                <stop offset=".6" stop-color="#fe9920" stop-opacity=".6" />
+                <stop offset=".8" stop-color="#fe9920" stop-opacity=".3" />
+                <stop offset="1" stop-color="#fe9920" stop-opacity="0" />
+            </radialGradient>
+            <circle transform-origin="center" fill="none" stroke="url(#a8)" stroke-width="15"
+                    stroke-linecap="round" stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100"
+                    cy="100" r="70">
+                <animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="1"
+                                  values="360;0" keyTimes="0;1" keySplines="0 0 1 1"
+                                  repeatCount="indefinite" />
+            </circle>
+            <circle transform-origin="center" fill="none" opacity=".2" stroke="#fe9920"
+                    stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70" />
+        </svg>
+    </div>
+</template>
+<style lang="scss" scoped>
+.app-loader {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+}
+</style>
