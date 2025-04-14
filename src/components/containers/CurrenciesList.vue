@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import CurrencyCard from '@/components/CurrencyCard.vue'
+import CurrencyCard from '@/components/containers/CurrencyCard.vue'
 import { computed } from 'vue'
 import { Currency } from '@/utils/types/CurrencyEnum.ts'
 import type { Currencies } from '@/composables/useCurrencies.ts'
