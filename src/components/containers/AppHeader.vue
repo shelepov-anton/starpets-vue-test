@@ -43,6 +43,7 @@ const selectCurrenciesModel = computed({
 
     @media screen and (max-width: 768px) {
         height: toRem(60);
+        padding: 0 toRem(16);
 
         .navigation-bar {
             margin-left: 0;
@@ -51,10 +52,6 @@ const selectCurrenciesModel = computed({
         .logo {
             display: none;
         }
-    }
-
-    @media screen and (max-width: 768px) {
-        padding: 0 toRem(16);
     }
 }
 </style>

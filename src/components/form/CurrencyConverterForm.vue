@@ -18,9 +18,7 @@ const formData = reactive({
         value: '1'
     },
     to: {
-        currency: props.activeCurrency === currenciesSelectOptions[0].value
-            ? currenciesSelectOptions[1].value
-            : currenciesSelectOptions[0].value,
+        currency: currenciesSelectOptions.find((option) => option.value !== props.activeCurrency)?.value,
         value: ''
     }
 })
