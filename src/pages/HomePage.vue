@@ -19,8 +19,7 @@ onMounted(() => {
 <template>
     <div v-if="!currenciesState.isLoading && currenciesState.currencies">
         <h1 class="title">Курсы валют на сегодня</h1>
-        <CurrenciesList
-                        :currencies="currenciesState.currencies"
+        <CurrenciesList :currencies="currenciesState.currencies"
                         :active-currency="settingsState.activeCurrency"
         />
     </div>
